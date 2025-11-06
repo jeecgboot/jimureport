@@ -157,8 +157,8 @@
         <!--  sqlserver-->
        <dependency>
            <groupId>com.microsoft.sqlserver</groupId>
-           <artifactId>sqljdbc4</artifactId>
-           <version>4.0</version>
+           <artifactId>mssql-jdbc</artifactId>
+           <version>12.8.1.jre11</version>
            <scope>runtime</scope>
        </dependency>
         <!-- postgresql驱动-->
