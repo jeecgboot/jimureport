@@ -7,6 +7,8 @@ spring:
   resource:
     static-locations: classpath:/static/
   #配置数据库
+  # Note: encrypt=true enables SSL/TLS, trustServerCertificate=true bypasses certificate validation
+  # For production, consider using trustServerCertificate=false with proper SSL certificates
   datasource:
     url: jdbc:sqlserver://127.0.0.1:1433;SelectMethod=cursor;DatabaseName=jimureport;encrypt=true;trustServerCertificate=true
     username: sa
