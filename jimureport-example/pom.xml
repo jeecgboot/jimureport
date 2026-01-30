@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.5</version>
+        <version>2.7.18</version>
         <relativePath/>
     </parent>
 
     <groupId>org.jeecgframework.jimureport</groupId>
     <name>jimureport-example</name>
     <artifactId>jimureport-example</artifactId>
-    <version>2.2</version>
+    <version>2.1</version>
 
     <url>http://www.jimureport.com</url>
     <description>积木报表集成示例</description>
@@ -45,19 +45,10 @@
     </repositories>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>1.8</java.version>
         <minio.version>8.0.3</minio.version>
-        <druid.version>1.2.24</druid.version>
-        <minidao.version>1.10.20</minidao.version>
         <!-- DB驱动 -->
         <mysql-connector-java.version>8.0.27</mysql-connector-java.version>
-        <!-- 积木报表版本 -->
-        <jimureport.version>2.3.0</jimureport.version>
-        <jimubi.version>2.3.0</jimubi.version>
-        <jimureport-echarts.version>2.2.0</jimureport-echarts.version>
-        <jimureport-nosql.version>2.1.0</jimureport-nosql.version>
-        <!-- SQL解析引擎 -->
-        <jsqlparser.version>4.9</jsqlparser.version>
     </properties>
 
 
@@ -67,67 +58,32 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
 
         <!-- 积木报表 -->
         <dependency>
             <groupId>org.jeecgframework.jimureport</groupId>
-            <artifactId>jimureport-spring-boot3-starter</artifactId>
-            <version>${jimureport.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>minidao-spring-boot-starter-jsqlparser-4.9</artifactId>
-                    <groupId>org.jeecgframework.boot3</groupId>
-                </exclusion>
-            </exclusions>
+            <artifactId>jimureport-spring-boot-starter</artifactId>
+            <version>2.3.1</version>
         </dependency>
         <!-- mongo、redis和文件数据集支持包，按需引入 -->
         <dependency>
             <groupId>org.jeecgframework.jimureport</groupId>
             <artifactId>jimureport-nosql-starter</artifactId>
-            <version>${jimureport-nosql.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>httpclient</artifactId>
-                    <groupId>org.apache.httpcomponents</groupId>
-                </exclusion>
-            </exclusions>
+            <version>2.1.0</version>
         </dependency>
         <!-- 后台导出接口Echart图表支持包，按需引入 -->
         <dependency>
             <groupId>org.jeecgframework.jimureport</groupId>
             <artifactId>jimureport-echarts-starter</artifactId>
-            <version>${jimureport-echarts.version}</version>
+            <version>2.2.0</version>
         </dependency>
         <!-- 积木BI大屏 -->
         <dependency>
             <groupId>org.jeecgframework.jimureport</groupId>
-            <artifactId>jimubi-spring-boot3-starter</artifactId>
-            <version>${jimubi.version}</version>
+            <artifactId>jimubi-spring-boot-starter</artifactId>
+            <version>2.3.0</version>
         </dependency>
-        <!-- minidao -->
-        <dependency>
-            <groupId>org.jeecgframework.boot3</groupId>
-            <artifactId>minidao-spring-boot-starter-jsqlparser-4.9</artifactId>
-            <version>${minidao.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>druid</artifactId>
-                    <groupId>com.alibaba</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <!-- jsqlparser-->
-        <dependency>
-            <groupId>com.github.jsqlparser</groupId>
-            <artifactId>jsqlparser</artifactId>
-            <version>${jsqlparser.version}</version>
-        </dependency>
-    
+
         <!-- SpringBoot-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -138,49 +94,21 @@
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
 
-        <!-- Sa-Token 权限认证，在线文档：https://sa-token.cc -->
+        <!--spring security-->
         <dependency>
-            <groupId>cn.dev33</groupId>
-            <artifactId>sa-token-spring-boot3-starter</artifactId>
-            <version>1.44.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-<!--        &lt;!&ndash; Sa-Token整合 Redis(使用jackson序列化方式) &ndash;&gt;
-        <dependency>
-            <groupId>cn.dev33</groupId>
-            <artifactId>sa-token-redis-jackson</artifactId>
-            <version>1.44.0</version>
-        </dependency>
-        &lt;!&ndash; 提供Redis连接池 &ndash;&gt;
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-        </dependency>-->
         
         <!-- minio oss-->
         <dependency>
             <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
             <version>${minio.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>guava</artifactId>
-                    <groupId>com.google.guava</groupId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.commons</groupId>
-                    <artifactId>commons-compress</artifactId>
-                </exclusion>
-            </exclusions>
             <optional>true</optional>
         </dependency>
 
         <!-- ============================数据库驱动========================== -->
-        <!-- druid -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>${druid.version}</version>
-        </dependency>
         <!--mysql-->
         <dependency>
             <groupId>mysql</groupId>

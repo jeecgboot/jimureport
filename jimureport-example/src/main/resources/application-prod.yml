@@ -1,32 +1,16 @@
 server:
   port: 8085
-  tomcat:
-    max-swallow-size: -1
-  error:
-    include-exception: true
-    include-stacktrace: ALWAYS
-    include-message: ALWAYS
 spring:
-  servlet:
-    multipart:
-      max-file-size: 10MB
-      max-request-size: 10MB
   #数据库
   datasource:
     url: jdbc:mysql://${MYSQL-HOST:127.0.0.1}:${MYSQL-PORT:3306}/${MYSQL-DB:jimureport}?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-  #Redis配置
-  data:
-    redis:
-      database: 0
-      host: 127.0.0.1
-      port: 6379
-      password:
-  # 登录认证配置
   security:
-    #是否开启登录认证
+    #是否放开预览页面不需要登录
+    open-view-page: true
+    #登录账号和密码
     user:
       name: "admin"
       password: "123456"
@@ -69,33 +53,8 @@ jeecg:
     bucketName: ??
   #大屏报表参数设置
   jmreport:
-    # 邮件发送
-    mail:
-      # 是否开启
-      enabled: false
-      host: "???"
-      sender: "???"
-      username: "??@??.com"
-      password: "???"
-      # 是否开启ssl
-#      ssl: true
-      # smtp端口
-#      port: 465
-    # 自动化导出
-    automate:
-      export:
-        # 开启自动导出,默认false
-        enable-auto-export: true
-        # 非必须，文件过期时间，单位天，默认：30
-        expired: 30
-        # 非必须，积木报表view页面地址
-        #jimu-view-path: "https://???/jmreport/view/"
-        # 非必须，下载的报表的存放目录(服务器上的目录)
-        #download-path: "/???/???"
     #多租户模式，默认值为空(created:按照创建人隔离、tenant:按照租户隔离)
     saasMode:
-    # 签名密钥
-    signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
     # 平台上线安全配置
     firewall:
       # 数据源安全 (开启后，不允许使用平台数据源、SQL解析加签并且不允许查询数据库)

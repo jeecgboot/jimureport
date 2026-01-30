@@ -1,33 +1,15 @@
 server:
-  port: 8085
-  tomcat:
-    max-swallow-size: -1
-  error:
-    include-exception: true
-    include-stacktrace: ALWAYS
-    include-message: ALWAYS  
+  port: 8082
 spring:
-  servlet:
-    multipart:
-      max-file-size: 10MB
-      max-request-size: 10MB
   #数据库
   datasource:
     url: jdbc:mysql://${MYSQL-HOST:127.0.0.1}:${MYSQL-PORT:3306}/${MYSQL-DB:jimureport}?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-  #Redis配置
-  data:
-    redis:
-      database: 1
-      host: 127.0.0.1
-      port: 6379
-      password:
-  # 登录认证配置
   security:
-    #是否开启登录认证
-    enable: true
+    #是否放开预览页面不需要登录
+    open-view-page: true
     #登录账号和密码
     user:
       name: "admin"
@@ -51,6 +33,8 @@ spring:
 minidao:
   base-package: org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*
 jeecg:
+  # 许可证文件所在目录
+  lic-path: G:\opt\jiami-certfile\certfile_jmreportlic\out100year
   # local|minio|alioss
   uploadType: local
   # local
@@ -71,6 +55,8 @@ jeecg:
     bucketName: ??
   #大屏报表参数设置
   jmreport:
+    # 签名密钥
+    signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
     # 邮件发送
     mail:
       # 是否开启
@@ -79,31 +65,12 @@ jeecg:
       sender: "???"
       username: "??@??.com"
       password: "???"
-      # 是否开启ssl
-      #ssl: true
-      # smtp端口
-      #port: 465
-    # 自动化导出
-    automate:
-      export:
-        # 开启自动导出,默认false
-        enable-auto-export: true
-        # 非必须，文件过期时间，单位天，默认：30
-        expired: 30
-        # 非必须，积木报表view页面地址
-        #jimu-view-path: "https://???/jmreport/view/"
-        # 非必须，下载的报表的存放目录(服务器上的目录)
-        #download-path: "/???/???"
     #多租户模式，默认值为空(created:按照创建人隔离、tenant:按照租户隔离)
     saasMode:
-    # 签名密钥
-    signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
     # 平台上线安全配置
     firewall:
       # 数据源安全 (开启后，不允许使用平台数据源、SQL解析加签并且不允许查询数据库)
       dataSourceSafe: false
-      # SQL解析安全 false: 数据库解析(默认,稳定性好) true: jsqlparser解析(不走数据库,安全级别高) v2.2.1+新增
-      #sqlParseSafe: true
       # 低代码开发模式（dev:开发模式，prod:发布模式—关闭在线报表设计功能，分配角色admin、lowdeveloper可放开限制）
       lowCodeMode: dev
       # sql注入检查级别（strict:严格, basic:简单校验, none:不校验）
@@ -120,9 +87,6 @@ jeecg:
     row: 200
     #自定义API接口的前缀 #{api_base_path}和#{domainURL}的值
     apiBasePath: http://192.168.1.11:8085
-    #数据量最大限制（适用于无分页模式、打印全部等场景，默认：100000）v2.2.1+新增
-    #说明：1.无分页模式-查询时最多返回该数量的记录 2.打印全部-最多处理该数量的记录
-    max-data-rows: 100000
     pageSize:
       - 10
       - 20

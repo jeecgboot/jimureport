@@ -30,8 +30,9 @@ import java.util.Map;
 @Component
 public class JimuDragExternalServiceImpl implements IOnlDragExternalService {
 
-    @Lazy
+
     @Autowired
+    @Lazy
     private IJimuReportDictService reportDictService;
 
     /**

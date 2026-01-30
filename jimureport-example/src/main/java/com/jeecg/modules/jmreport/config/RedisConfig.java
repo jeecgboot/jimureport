@@ -1,4 +1,4 @@
-package com.jeecg.modules.jmreport.satoken.config;
+package com.jeecg.modules.jmreport.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -42,10 +42,12 @@ public class RedisConfig {
     }
 
     private Jackson2JsonRedisSerializer<Object> jacksonSerializer() {
+        Jackson2JsonRedisSerializer<Object> jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer<>(Object.class);
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
+        // 使用新的替代方法，避免已废弃的enableDefaultTyping
         objectMapper.activateDefaultTyping(LaissezFaireSubTypeValidator.instance, ObjectMapper.DefaultTyping.NON_FINAL);
-        // 直接在构造器中传入 objectMapper
-        return new Jackson2JsonRedisSerializer<>(objectMapper, Object.class);
+        jackson2JsonRedisSerializer.setObjectMapper(objectMapper);
+        return jackson2JsonRedisSerializer;
     }
 }

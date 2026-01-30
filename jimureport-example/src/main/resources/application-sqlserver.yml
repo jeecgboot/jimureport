@@ -1,16 +1,6 @@
 server:
   port: 8085
-  tomcat:
-    max-swallow-size: -1
-  error:
-    include-exception: true
-    include-stacktrace: ALWAYS
-    include-message: ALWAYS
 spring:
-  servlet:
-    multipart:
-      max-file-size: 10MB
-      max-request-size: 10MB
   #配置静态资源
   mvc:
     static-path-pattern: /**
