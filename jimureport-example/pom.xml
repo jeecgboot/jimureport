@@ -206,7 +206,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.6</version>
+            <version>42.7.11</version>
             <scope>runtime</scope>
         </dependency>
         <!-- ===需要什么数据库，手工打开注释=== -->
