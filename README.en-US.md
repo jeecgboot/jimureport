@@ -192,7 +192,7 @@ And with the arrival of the AI wave, JimuReport goes a step further by introduci
 
 #### Step 3: Add JimuChatBI Dependencies (Conversational Intelligent Data Analysis)
 
--   springboot4
+-  The current dependency supports both Spring Boot 4 and Spring Boot 3 projects.
 
 ```
 <!-- JimuChatBI -->

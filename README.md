@@ -193,7 +193,7 @@ v2.5.1 | 2026-08-25
 
 #### 第三步：引入积木 ChatBI 依赖（对话式智能数据分析）
 
--   springboot4
+-   当前依赖同时支持 SpringBoot4 和 SpringBoot3 项目
 
 ```
 <!-- 积木chatbi -->
