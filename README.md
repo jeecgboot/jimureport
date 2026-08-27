@@ -19,11 +19,6 @@ v2.5.1 | 2026-08-25
 > **🎉 JimuChatBI 重磅发布：首款免费开源对话式智能数据分析产品（Chat2BI）。一款真正的 AI 报表诞生了！一句话生成报表和数据大屏，支持对话式 AI 修改优化；类 Excel 在线报表设计，兼容国产信创数据源——帆软、Tableau 的高性价比开源替代。** ✨
 
 
-<p align="center">
-  <img width="90%" src="https://upload.jeecg.com/jeecg/jimusite/jimureport_function_202605.webp" alt="JimuReport 功能全景"/>
-</p>
-
-
 ## 目录
 
 - [产品介绍](#产品介绍)
