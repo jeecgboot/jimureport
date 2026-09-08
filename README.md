@@ -64,19 +64,6 @@ v2.5.2 | 2026-09-09
 - **移动端全场景**：报表、大屏、仪表盘一次开发，PC / 移动 / 大屏 / 门户多端适配。
 
 
-## 快速链接
-
-| 资源 | 地址 |
-| --- | --- |
-| 🏠 官方网站 | http://jimureport.com |
-| 🎯 在线体验 | http://jimureport.com/login （手机号一键注册，免费使用） |
-| 📖 开发文档 | https://help.jimureport.com |
-| 🤖 AI 能力 | https://help.jimureport.com/rumen/aiAssistant/ |
-| 🧩 Skills 开源仓库 | https://github.com/jeecgboot/skills |
-| 🎬 视频教程 | http://jimureport.com/doc/video |
-| 🐛 问题反馈 | https://github.com/jeecgboot/JimuReport/issues/new |
-| 💬 QQ 交流群 | 873666520、854804538(满)、③596660273(满)、①212391162(满)、②929646317(满) |
-
 
 ## 快速集成
 
@@ -184,6 +171,20 @@ v2.5.2 | 2026-09-09
 #### 第四步：初始化 SQL 和必要配置
 
 - https://help.jimureport.com/quick.html
+
+
+## 技术文档
+
+| 资源 | 地址 |
+| --- | --- |
+| 🎯 在线体验 | http://jimureport.com/login （手机号一键注册，免费使用） |
+| 📖 开发文档 | https://help.jimureport.com |
+| 🤖 AI 助手 | https://help.jimureport.com/rumen/aiAssistant/ |
+| 🧩 AI Skills| https://github.com/jeecgboot/skills |
+| 🎬 视频教程 | http://jimureport.com/doc/video |
+| 🐛 问题反馈 | https://github.com/jeecgboot/JimuReport/issues/new |
+| 💬 QQ 交流群 | 873666520、854804538(满)、③596660273(满)、①212391162(满)、②929646317(满) |
+
 
 
 ## AI 助手集成配置

@@ -62,18 +62,6 @@ And with the arrival of the AI wave, JimuReport goes a step further by introduci
 - **Mobile & Full-Scenario**: reports, big screens, and dashboards — develop once, adapt to PC / mobile / big screen / portal.
 
 
-## Quick Links
-
-| Resource | URL |
-| --- | --- |
-| 🏠 Official Website | http://jimureport.com |
-| 🎯 Online Demo | http://jimureport.com/login (one-click mobile registration, free to use) |
-| 📖 Documentation | https://help.jimureport.com |
-| 🤖 AI Capabilities | https://help.jimureport.com/rumen/aiAssistant/ |
-| 🧩 Skills Repository | https://github.com/jeecgboot/skills |
-| 🎬 Video Tutorials | http://jimureport.com/doc/video |
-| 🐛 Issues | https://github.com/jeecgboot/JimuReport/issues/new |
-| 💬 QQ Groups | 873666520, 854804538(full), ③596660273(full), ①212391162(full), ②929646317(full) |
 
 
 ## Quick Integration
@@ -182,6 +170,20 @@ And with the arrival of the AI wave, JimuReport goes a step further by introduci
 #### Step 4: Initialize SQL and Required Configuration
 
 - https://help.jimureport.com/quick.html
+
+
+## Quick Links
+
+| Resource | URL |
+| --- | --- |
+| 🎯 Online Demo | http://jimureport.com/login (one-click mobile registration, free to use) |
+| 📖 Documentation | https://help.jimureport.com |
+| 🤖 AI Assistant | https://help.jimureport.com/rumen/aiAssistant/ |
+| 🧩 AI Skills | https://github.com/jeecgboot/skills |
+| 🎬 Video Tutorials | http://jimureport.com/doc/video |
+| 🐛 Issues | https://github.com/jeecgboot/JimuReport/issues/new |
+| 💬 QQ Groups | 873666520, 854804538(full), ③596660273(full), ①212391162(full), ②929646317(full) |
+
 
 
 ## Deployment & Running
