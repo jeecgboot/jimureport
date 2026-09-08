@@ -52,8 +52,8 @@
         <!-- DB驱动 -->
         <mysql-connector-java.version>8.0.27</mysql-connector-java.version>
         <!-- 积木报表版本 -->
-        <jimureport.version>2.5.1</jimureport.version>
-        <jimubi.version>2.5.0</jimubi.version>
+        <jimureport.version>2.5.2</jimureport.version>
+        <jimubi.version>2.5.2</jimubi.version>
         <jimureport-echarts.version>2.3.0</jimureport-echarts.version>
         <jimureport-nosql.version>2.3.0</jimureport-nosql.version>
         <!-- SQL解析引擎 -->
