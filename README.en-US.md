@@ -160,7 +160,7 @@ And with the arrival of the AI wave, JimuReport goes a step further by introduci
 <dependency>
   <groupId>org.jeecgframework.jimureport</groupId>
   <artifactId>jimubi-spring-boot3-starter</artifactId>
-  <version>2.5.0</version>
+  <version>2.5.0.2</version>
 </dependency>
 ```
 
@@ -170,7 +170,7 @@ And with the arrival of the AI wave, JimuReport goes a step further by introduci
 <dependency>
   <groupId>org.jeecgframework.jimureport</groupId>
   <artifactId>jimubi-spring-boot4-starter</artifactId>
-  <version>2.5.0</version>
+  <version>2.5.0.2</version>
 </dependency>
 ```
 
