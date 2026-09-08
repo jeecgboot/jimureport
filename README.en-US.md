@@ -30,9 +30,9 @@ JimuReport is a **free data visualization reporting tool** that brings reports, 
 - **Full-Scenario Coverage**: JimuBI supports big screens, dashboards, portals, and mobile — develop once, adapt everywhere; JimuChatBI enables data queries and analysis through natural-language conversation, lowering the barrier to BI; big screens use a Word-like style with freely draggable components.
 - **Simple · Easy · Professional**: greatly lowers report development difficulty, shortens development cycles, and saves costs.
 
-> **Open Source First** — building "professional, easy-to-use, AI-intelligent" data visualization reports, big screens, and portals
-> **One-Sentence AI Generation** — AI Report · AI Big Screen · AI Dashboard
-> **License** — free to use, commercial use allowed, source code not open
+> - **Open Source First** — building "professional, easy-to-use, AI-intelligent" data visualization reports, big screens, and portals
+> - **One-Sentence AI Generation** — AI Report · AI Big Screen · AI Dashboard
+> - **License** — free to use, commercial use allowed, source code not open
 
 
 ## Background
