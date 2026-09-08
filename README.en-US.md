@@ -18,22 +18,6 @@ v2.5.2 | 2026-09-09
 
 > **🎉 JimuChatBI is now live: the first free and open-source conversational intelligent data analytics product (Chat2BI). A truly AI-powered reporting tool is here! Generate reports and data screens from one sentence, with conversational AI refinement and optimization; Excel-like online report design, compatible with Xinchuang / domestic data sources — a cost-effective open-source alternative to FineReport and Tableau.** ✨
 
-## Contents
-
-- [Product Overview](#product-overview)
-- [Background](#background)
-- [Why Choose JimuReport](#why-choose-jimureport)
-- [Quick Links](#quick-links)
-- [Quick Integration](#quick-integration)
-- [Deployment & Running](#deployment--running)
-- [AI-Powered Generation](#ai-powered-generation)
-- [Database Compatibility](#database-compatibility)
-- [Feature List](#feature-list)
-- [Screenshots](#screenshots)
-- [License](#license)
-- [Donation](#donation)
-- [Disclaimer](#disclaimer)
-
 
 ## Product Overview
 
@@ -47,9 +31,7 @@ JimuReport is a **free data visualization reporting tool** that brings reports, 
 - **Simple · Easy · Professional**: greatly lowers report development difficulty, shortens development cycles, and saves costs.
 
 > **Open Source First** — building "professional, easy-to-use, AI-intelligent" data visualization reports, big screens, and portals
->
 > **One-Sentence AI Generation** — AI Report · AI Big Screen · AI Dashboard
->
 > **License** — free to use, commercial use allowed, source code not open
 
 
