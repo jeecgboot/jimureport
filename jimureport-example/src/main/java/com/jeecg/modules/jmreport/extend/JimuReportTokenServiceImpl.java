@@ -43,7 +43,7 @@ public class JimuReportTokenServiceImpl implements JmReportTokenServiceI {
         if(StringUtils.isEmpty(token) && request != null){
             token = request.getParameter("token");
             // 将URL上的token设置到SaToken上下文，方便后续操作
-            log.info("------SA--Init--TOKEN-----RequestPath={} ，从URL参数获取Token = {}", SaHolder.getRequest().getRequestPath(), token);
+            log.debug("------SA--Init--TOKEN-----RequestPath={} ，从URL参数获取Token = {}", SaHolder.getRequest().getRequestPath(), token);
             StpUtil.setTokenValue(token);
         }
         return token;
@@ -142,7 +142,7 @@ public class JimuReportTokenServiceImpl implements JmReportTokenServiceI {
             StpUtil.checkLogin();
             log.debug("--SaToken verifyToken-成功！RequestPath={}，Token = {}", SaHolder.getRequest().getRequestPath(), token);
         } catch (Exception e) {
-            log.warn("Token校验失败: token = {}，error:{}", token, e.getMessage());
+            log.debug("Token校验失败: token = {}，error:{}", token, e.getMessage());
             
             if(e instanceof NotLoginException){
                 // 跳转登录页面
