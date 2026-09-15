@@ -2,14 +2,13 @@ package com.jeecg;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.Environment;
 
 /**
  * 积木报表独立服务启动类
  */
-@SpringBootApplication(scanBasePackages = {"org.jeecg", "com.jeecg"}, exclude = {MongoAutoConfiguration.class})
+@SpringBootApplication(scanBasePackages = {"org.jeecg", "com.jeecg"})
 public class JimuReportApplication {
 
     public static void main(String[] args) {
@@ -26,7 +25,8 @@ public class JimuReportApplication {
         System.out.println("\n----------------------------------------------------------\n\t" +
                 "JimuReport 积木报表平台 is running!  Access URL:\n\t" +
                 "报表工作台: \t\thttp://localhost:" + port + path + "/jmreport/list\n\t" +
-                "BI大屏工作台: \t\thttp://localhost:" + port + path + "/drag/list\n\t" +
+                "大屏工作台: \t\thttp://localhost:" + port + path + "/drag/list\n\t" +
+                "ChatBI工作台: \t\thttp://localhost:" + port + path + "/jimu/chat2bi/index\n\t" +
                 "----------------------------------------------------------");
     }
 

@@ -8,13 +8,22 @@ import com.jeecg.modules.jmreport.satoken.util.AjaxRequestUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 import org.jeecg.modules.jmreport.api.JmReportTokenServiceI;
 import org.jeecg.modules.jmreport.common.constant.JmConst;
 import org.jeecg.modules.jmreport.common.expetion.JimuReportException;
 import org.jeecg.modules.jmreport.common.util.JimuSpringContextUtils;
 import org.jeecg.modules.jmreport.common.util.OkConvertUtils;
+import org.jeecg.modules.jmreport.common.vo.JmRoleModel;
+import org.jeecg.modules.jmreport.common.vo.JmUserModel;
+import org.jeecg.modules.jmreport.desreport.model.JmPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 
 /**
  * 自定义积木报表鉴权(如果不进行自定义，则所有请求不做权限控制)
@@ -123,6 +132,9 @@ public class JimuReportTokenServiceImpl implements JmReportTokenServiceI {
                 "jmreport:category:completelyDelete",// 报表分类-彻底删除
                 "jmreport:category:batchMove",       // 报表分类-批量移动
                 "jmreport:category:folderSort",      // 报表分类-文件夹排序
+                "jmreport:datasource:testConnection",// 数据源连接测试
+                "jmreport:datasource:saveOrUpate",   // 数据源新增/编辑
+                "jmreport:datasource:delete",        // 数据源删除
                 "jmreport:design:loadTableData"      // 设计器-加载表数据
         };
     }
@@ -147,8 +159,10 @@ public class JimuReportTokenServiceImpl implements JmReportTokenServiceI {
             if(e instanceof NotLoginException){
                 // 跳转登录页面
                 try {
-                    if(!AjaxRequestUtils.isAjaxRequest(JimuSpringContextUtils.getHttpServletRequest())){
-                        JimuSpringContextUtils.getHttpServletResponse().sendRedirect("/login/login.html");
+                    HttpServletRequest request = JimuSpringContextUtils.getHttpServletRequest();
+                    if(!AjaxRequestUtils.isAjaxRequest(request)){
+                        String redirect = URLEncoder.encode(request.getRequestURI(), StandardCharsets.UTF_8);
+                        JimuSpringContextUtils.getHttpServletResponse().sendRedirect("/login/login.html?redirect=" + redirect);
                     }
                 } catch (Exception ex) {
                 }
@@ -191,5 +205,56 @@ public class JimuReportTokenServiceImpl implements JmReportTokenServiceI {
             }
         }
         return headerTenantId;
+    }
+
+    @Override
+    public JmPage<JmRoleModel> getRoleList(String token, String keyword, Integer pageNo, Integer pageSize) {
+        String[] roleCodes = getRoles(token);
+        List<JmRoleModel> allList = new ArrayList<>();
+        for (String roleCode : roleCodes) {
+            JmRoleModel role = new JmRoleModel();
+            role.setRoleCode(roleCode);
+            role.setRoleName(roleCode);
+            allList.add(role);
+        }
+        if (StringUtils.isNotEmpty(keyword)) {
+            allList.removeIf(role -> (role.getRoleCode() == null || !role.getRoleCode().contains(keyword))
+                    && (role.getRoleName() == null || !role.getRoleName().contains(keyword)));
+        }
+        return buildPage(allList, pageNo, pageSize);
+    }
+
+    @Override
+    public JmPage<JmUserModel> getUserList(String token, String keyword, Integer pageNo, Integer pageSize) {
+        List<JmUserModel> allList = new ArrayList<>();
+        try {
+            String loginId = StpUtil.getLoginIdAsString();
+            JmUserModel user = new JmUserModel();
+            user.setUserId(loginId);
+            user.setUsername(loginId);
+            allList.add(user);
+        } catch (Exception e) {
+            log.warn("获取当前登录用户失败: {}", e.getMessage());
+        }
+        if (StringUtils.isNotEmpty(keyword)) {
+            allList.removeIf(user -> (user.getUserId() == null || !user.getUserId().contains(keyword))
+                    && (user.getUsername() == null || !user.getUsername().contains(keyword)));
+        }
+        return buildPage(allList, pageNo, pageSize);
+    }
+
+    private <T> JmPage<T> buildPage(List<T> list, Integer pageNo, Integer pageSize) {
+        int current = (pageNo == null || pageNo < 1) ? 1 : pageNo;
+        int size = (pageSize == null || pageSize < 1) ? 10 : pageSize;
+        JmPage<T> page = new JmPage<>();
+        page.setPageNo(current);
+        page.setPageSize(size);
+        page.setTotal(list.size());
+        int pages = size > 0 ? (int) Math.ceil((double) list.size() / size) : 1;
+        page.setPages(pages);
+        int fromIndex = (current - 1) * size;
+        int toIndex = Math.min(fromIndex + size, list.size());
+        page.setRecords(fromIndex >= list.size() ? new ArrayList<>() : new ArrayList<>(list.subList(fromIndex, toIndex)));
+        return page;
     }
 }

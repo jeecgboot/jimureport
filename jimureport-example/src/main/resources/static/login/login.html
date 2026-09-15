@@ -282,6 +282,7 @@
     <div class="container">
         <form class="form-signin" method="get" action="/doLogin">
             <h2 class="form-signin-heading">欢迎使用积木报表</h2>
+            <input type="hidden" id="redirect" name="redirect" value="">
             <p>
                 <label for="username" class="sr-only">Username</label>
                 <input type="text" id="username" name="username" class="form-control" placeholder="请输入用户名" required=""
@@ -325,6 +326,10 @@
 <script>
     window.onload = function() {
         const urlParams = new URLSearchParams(window.location.search);
+        const redirect = urlParams.get('redirect');
+        if (redirect) {
+            document.getElementById('redirect').value = redirect;
+        }
         if (urlParams.has('error')) {
             document.getElementById('error-message').style.display = 'block';
         }

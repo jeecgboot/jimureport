@@ -2,11 +2,12 @@ server:
   port: 8085
   tomcat:
     max-swallow-size: -1
-  error:
-    include-exception: true
-    include-stacktrace: ALWAYS
-    include-message: ALWAYS  
 spring:
+  web:
+    error:
+      include-exception: true
+      include-stacktrace: ALWAYS
+      include-message: ALWAYS
   servlet:
     multipart:
       max-file-size: 10MB

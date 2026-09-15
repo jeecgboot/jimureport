@@ -4,59 +4,37 @@
 
 # JimuReport积木报表(免费报表工具)
 
-v2.5.0 | 2026-06-25
+v2.5.2 | 2026-09-09
 
 
 [![](https://img.shields.io/badge/Author-北京国炬信息技术有限公司-orange.svg)](https://guojusoft.com)
 [![](https://img.shields.io/badge/version-2.5.0-brightgreen.svg)](https://github.com/jeecgboot/JimuReport)
 [![](https://img.shields.io/badge/Blog-积木报表官网-blue.svg)](http://jimureport.com)
 [![](https://img.shields.io/badge/Docs-开发文档-9cf.svg)](https://help.jimureport.com)
-[![](https://img.shields.io/badge/AI-报表%20%26%20大屏-ff5722.svg)](https://jimureport.com/skills)
+[![](https://img.shields.io/badge/AI-报表%20%26%20大屏%20%26%20ChatBI-ff5722.svg)](https://jimureport.com/skills)
 [![GitHub stars](https://img.shields.io/github/stars/jeecgboot/JimuReport.svg?style=social&label=Stars)](https://github.com/jeecgboot/JimuReport)
 [![GitHub forks](https://img.shields.io/github/forks/jeecgboot/JimuReport.svg?style=social&label=Fork)](https://github.com/jeecgboot/JimuReport)
 
 
-> **免费的 AI 可视化报表。一句话描述需求，AI 自动生成报表与数据大屏；同时提供类 Excel 拖拽设计器，兼容 30 余种数据源，轻松应对各类复杂报表场景——帆软、Tableau 的高性价比开源替代。** ✨
+> **🎉 JimuChatBI 重磅发布：首款免费开源对话式智能数据分析产品（Chat2BI）。一款真正的 AI 报表诞生了！一句话生成报表和数据大屏，支持对话式 AI 修改优化；类 Excel 在线报表设计，兼容国产信创数据源——帆软、Tableau 的高性价比开源替代。** ✨
 
 
-<p align="center">
-  <img width="90%" src="https://upload.jeecg.com/jeecg/jimusite/jimureport_function_202605.webp" alt="JimuReport 功能全景"/>
-</p>
-
-
-## 目录
-
-- [产品介绍](#产品介绍)
-- [产生背景](#产生背景)
-- [为什么选择 JimuReport](#为什么选择-jimureport)
-- [快速链接](#快速链接)
-- [快速集成](#快速集成)
-- [AI 助手集成配置](#ai-助手集成配置)
-- [部署与运行](#部署与运行)
-- [AI 智能生成](#ai-智能生成)
-- [数据库兼容](#数据库兼容)
-- [功能清单](#功能清单)
-- [效果展示](#效果展示)
-- [授权协议](#授权协议)
-- [捐赠](#捐赠)
-- [免责声明](#免责声明)
 
 
 ## 产品介绍
 
-积木报表是一款**免费的数据可视化报表工具**，集报表、打印、大屏、仪表盘于一体，像搭积木一样完全在线设计。分两大模块：**JimuReport** 主攻传统复杂报表与打印，**JimuBI** 专注数据大屏与仪表盘可视化。
+积木报表是一款**免费的数据可视化报表工具**，集报表、打印、大屏、仪表盘、对话式 BI 于一体，像搭积木一样完全在线设计。分三大模块：**JimuReport** 主攻传统复杂报表与打印，**JimuBI** 专注数据大屏与仪表盘可视化，**JimuChatBI** 提供对话式智能数据分析，用自然语言即可完成数据查询与洞察。
 
-- **AI 智能生成**：内置 Claude Code 技能（AI 报表 / 大屏 / 仪表盘），一句话需求自动生成专业可视化页面，告别繁琐拖拽。
+- **🎉 JimuChatBI 重磅发布**：**首款免费开源对话式智能数据分析产品（Chat2BI）**。对着 AI 说句话，报表就出来了——表格、图表、分组汇总自动生成，复杂报表场景轻松应对。想做数据大屏？同样一句话搞定，让数据分析进入 AI 时代。
+- **AI 智能生成**：内置 Claude Code 技能（AI 报表 / 大屏 / 仪表盘 / ChatBI），一句话需求自动生成专业可视化页面，支持对话式 AI 修改优化，告别繁琐拖拽。
 - **类 Excel 设计器**：Web 版拖拽设计、所见即所得，专注解决企业级各类复杂报表难题。
 - **企业级高级功能**：分组 / 交叉 / 主子报表、**多 Sheet 报表**、数据钻取、**一键打印**、套打与发票打印、**数据填报**、**移动端报表**、二维码条码等一应俱全。
-- **全场景覆盖**：JimuBI 同时支持大屏、仪表盘、门户、移动端，一次开发、多端适配；大屏采用类 Word 风格，组件随意拖动，轻松设计炫酷大屏。
+- **全场景覆盖**：JimuBI 同时支持大屏、仪表盘、门户、移动端，一次开发、多端适配；JimuChatBI 以自然语言对话方式实现数据查询与分析，降低 BI 使用门槛；大屏采用类 Word 风格，组件随意拖动，轻松设计炫酷大屏。
 - **简单 · 易用 · 专业**：极大降低报表开发难度，缩短开发周期，节省成本。
 
-> **专注开源** —— 打造「专业 · 易用 · AI 智能」的数据可视化报表、大屏与门户
->
-> **一句话 AI 生成** —— AI 报表 · AI 大屏 · AI 仪表盘
->
-> **开源协议** —— 功能免费、可商用、代码不开放
+> - **专注开源** —— 打造「专业 · 易用 · AI 智能」的数据可视化报表、大屏与门户
+> - **一句话 AI 生成** —— AI 报表 · AI 大屏 · AI 仪表盘
+> - **开源协议** —— 功能免费、可商用、代码不开放
 
 
 ## 产生背景
@@ -65,15 +43,18 @@ v2.5.0 | 2026-06-25
 
 那么，要做一款怎样的报表？随着低代码理念兴起，"先用工具设计模板、再与系统集成"的传统模式已逐渐落伍。我们追求的是完全在线设计、可视化、零门槛操作，真正实现简单、易用又智能的报表。
 
-而随着 AI 浪潮到来，积木报表更进一步引入 **AI 能力**——内置 Claude Code 技能，一句话即可生成报表、大屏与仪表盘，让报表设计从"拖拽"迈向"对话"，真正做到智能、高效。
+而随着 AI 浪潮到来，积木报表更进一步引入 **AI 能力**——内置 Claude Code 技能，一句话即可生成报表、大屏、仪表盘与 **JimuChatBI 对话式智能分析**，让报表设计从"拖拽"迈向"对话"，真正做到智能、高效。
+
+**JimuChatBI —— 首款免费开源对话式智能数据分析产品（Chat2BI）**：一款真正的 AI 报表诞生了！用户只需像聊天一样说出分析需求，系统即可自动生成表格、图表、分组汇总，并支持对话式 AI 修改优化，复杂报表场景也能轻松应对。
 
 
 ## 为什么选择 JimuReport
 
->    **永久免费 · AI 智能 · 全场景覆盖** —— 一句话生成报表，类 Excel 拖拽设计，30+ 数据源、复杂报表、精准打印、数据填报、大屏仪表盘一应俱全，低代码时代的报表首选！
+>    **永久免费 · AI 智能 · 全场景覆盖** —— **JimuChatBI：首款免费开源对话式智能数据分析产品（Chat2BI）**，一句话生成报表和数据大屏，类 Excel 拖拽设计，30+ 数据源、复杂报表、精准打印、数据填报、大屏仪表盘一应俱全，低代码时代的报表首选！
 
+- **JimuChatBI 重磅发布**：**首款免费开源对话式智能数据分析产品（Chat2BI）**。对着 AI 说句话，报表就出来了——表格、图表、分组汇总自动生成；想做数据大屏，同样一句话搞定，让数据分析进入 AI 时代。
 - **快速集成**：采用 SpringBoot 的脚手架项目，都可以快速集成。
-- **AI 赋能**：内置 Claude Code 技能（AI 报表 / 大屏 / 仪表盘），一句话或一张截图，自动生成可编辑的可视化页面。
+- **AI 赋能**：内置 Claude Code 技能（AI 报表 / 大屏 / 仪表盘 / ChatBI），一句话或一张截图，自动生成可编辑的可视化页面，并支持对话式 AI 修改优化。
 - **类 Excel 设计器**：Web 拖拽设计、所见即所得，支持多 Sheet、无限行列、冻结窗口，以及 SUMIFS / VLOOKUP / IF 等报表函数与表达式自动合计。
 - **复杂报表**：分组、交叉、主子、明细、多表头、数据钻取、预警、条件查询、二维码 / 条形码报表全覆盖。
 - **数据联动与大数据**：兼容 30+ 数据源（MySQL、Oracle、达梦、人大金仓，及 Hive、ClickHouse、Doris、ES、MongoDB、文件 / 多文件 等），支持 SQL / API / JSON / WebSocket 多源绑定与图表联动下钻。
@@ -83,23 +64,10 @@ v2.5.0 | 2026-06-25
 - **移动端全场景**：报表、大屏、仪表盘一次开发，PC / 移动 / 大屏 / 门户多端适配。
 
 
-## 快速链接
-
-| 资源 | 地址 |
-| --- | --- |
-| 🏠 官方网站 | http://jimureport.com |
-| 🎯 在线体验 | http://jimureport.com/login （手机号一键注册，免费使用） |
-| 📖 开发文档 | https://help.jimureport.com |
-| 🤖 AI 能力 | https://help.jimureport.com/rumen/aiAssistant/ |
-| 🧩 Skills 开源仓库 | https://github.com/jeecgboot/skills |
-| 🎬 视频教程 | http://jimureport.com/doc/video |
-| 🐛 问题反馈 | https://github.com/jeecgboot/JimuReport/issues/new |
-| 💬 QQ 交流群 | 873666520、854804538(满)、③596660273(满)、①212391162(满)、②929646317(满) |
-
 
 ## 快速集成
 
-> 支持快速集成 SpringBoot 脚手架项目中。SpringBoot3 版本要求 JDK17 及以上、SpringBoot2 版要求 JDK8+。详细配置见 [快速集成文档](https://help.jimureport.com/quick.html)。
+> 支持快速集成 SpringBoot 脚手架项目中。SpringBoot4 版本要求 JDK17 及以上、SpringBoot2 版要求 JDK8+。详细配置见 [快速集成文档](https://help.jimureport.com/quick.html)。
 
 #### 第一步：引入积木报表依赖
 
@@ -109,7 +77,7 @@ v2.5.0 | 2026-06-25
  <dependency>
     <groupId>org.jeecgframework.jimureport</groupId>
     <artifactId>jimureport-spring-boot3-starter</artifactId>
-    <version>2.5.0</version>
+    <version>2.5.2</version>
  </dependency>
  <!-- mongo、redis和文件数据集支持包，按需引入 -->
  <dependency>
@@ -122,6 +90,16 @@ v2.5.0 | 2026-06-25
     <groupId>org.jeecgframework.jimureport</groupId>
     <artifactId>jimureport-echarts-starter</artifactId>
     <version>2.3.0</version>
+ </dependency>
+```
+
+-   springboot4（支持AI助手）
+
+```
+ <dependency>
+    <groupId>org.jeecgframework.jimureport</groupId>
+    <artifactId>jimureport-spring-boot4-starter</artifactId>
+    <version>2.5.2</version>
  </dependency>
 ```
 
@@ -153,7 +131,17 @@ v2.5.0 | 2026-06-25
 <dependency>
   <groupId>org.jeecgframework.jimureport</groupId>
   <artifactId>jimubi-spring-boot3-starter</artifactId>
-  <version>2.5.0</version>
+  <version>2.5.2</version>
+</dependency>
+```
+
+-   springboot4（支持AI助手）
+
+```
+<dependency>
+  <groupId>org.jeecgframework.jimureport</groupId>
+  <artifactId>jimubi-spring-boot4-starter</artifactId>
+  <version>2.5.2</version>
 </dependency>
 ```
 
@@ -167,14 +155,41 @@ v2.5.0 | 2026-06-25
  </dependency>
 ```
 
-#### 第三步：初始化 SQL 和必要配置
+#### 第三步：引入积木 ChatBI 依赖（对话式智能数据分析）
+
+-   当前依赖同时支持 SpringBoot4 和 SpringBoot3 项目
+
+```
+<!-- 积木chatbi -->
+<dependency>
+    <groupId>org.jeecgframework.jimureport</groupId>
+    <artifactId>jimuchatbi-spring-boot4-starter</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+#### 第四步：初始化 SQL 和必要配置
 
 - https://help.jimureport.com/quick.html
 
 
+## 技术文档
+
+| 资源 | 地址 |
+| --- | --- |
+| 🎯 在线体验 | http://jimureport.com/login （手机号一键注册，免费使用） |
+| 📖 开发文档 | https://help.jimureport.com |
+| 🤖 AI 助手 | https://help.jimureport.com/rumen/aiAssistant/ |
+| 🧩 AI Skills| https://github.com/jeecgboot/skills |
+| 🎬 视频教程 | http://jimureport.com/doc/video |
+| 🐛 问题反馈 | https://github.com/jeecgboot/JimuReport/issues/new |
+| 💬 QQ 交流群 | 873666520、854804538(满)、③596660273(满)、①212391162(满)、②929646317(满) |
+
+
+
 ## AI 助手集成配置
 
-> AI 助手功能仅支持 **SpringBoot3**（`jimureport-spring-boot3-starter`）。配置完成后，报表设计器内将自动显示 AI 入口，**无需额外部署**，开箱即用。
+> AI 助手功能支持 **SpringBoot4 / SpringBoot3**（`jimureport-spring-boot4-starter` / `jimureport-spring-boot3-starter`）。配置完成后，报表设计器内将自动显示 AI 入口，**无需额外部署**，开箱即用。
 >
 > 详细说明：[AI 助手配置文档](https://help.jimureport.com/rumen/aiAssistant/) · [配置教程](https://my.oschina.net/jeecg/blog/19711672)
 
@@ -221,7 +236,7 @@ jeecg:
 
 #### jimureport-example 环境要求
 
-- 要求 JDK17+（本项目 SpringBoot3 架构）
+- 要求 JDK17+（本项目 SpringBoot4 架构）
 - 要求 MySQL5.7+，手工执行 `db/jimureport.mysql5.7.create.sql`，会自动创建库 jimureport
 - 项目配置：`src/main/resources/application-dev.yml`
 - 要求 Redis（可选）
@@ -237,7 +252,9 @@ jeecg:
 
 ## AI 智能生成
 
-> 完成 [AI 助手集成配置](#ai-助手集成配置) 后，报表设计器内 AI 入口即刻可用。一句话描述需求或上传截图，AI 自动生成完整的**报表、大屏、仪表盘**，覆盖数据可视化全场景，告别繁琐拖拽。
+> 完成 [AI 助手集成配置](#ai-助手集成配置) 后，报表设计器内 AI 入口即刻可用。一句话描述需求或上传截图，AI 自动生成完整的**报表、大屏、仪表盘、对话式 BI**，覆盖数据可视化全场景，告别繁琐拖拽。
+>
+> **🎉 JimuChatBI —— 首款免费开源对话式智能数据分析产品（Chat2BI）**：对着 AI 说句话，报表就出来了——表格、图表、分组汇总自动生成，复杂报表场景轻松应对；想做数据大屏，同样一句话搞定，支持对话式 AI 修改优化，让数据分析进入 AI 时代。
 
 #### 🤖 AI 助手能力一览
 
@@ -246,6 +263,7 @@ jeecg:
 | **AI 报表** | 自然语言一句话生成分组、交叉、主子等各类复杂报表 | 做一个按部门分组的工资统计报表 |
 | **AI 大屏** | 一句话生成完整大屏，自动完成图表布局、色彩主题与数据绑定 | 做一个智慧物流监控大屏 |
 | **AI 仪表盘** | 自动生成 KPI 看板与业务仪表盘，支持多图表组合 | 生成一个销售运营 KPI 看板 |
+| **AI 对话式 BI（JimuChatBI）** | **首款免费开源对话式智能数据分析产品（Chat2BI）**；自然语言对话式数据分析，自动查询数据并生成可视化洞察，支持对话式 AI 修改优化 | 今年各区域销售额趋势如何；做一个按部门分组的工资统计报表 |
 | **截图还原** | 上传报表 / 大屏截图，AI 自动识别并还原为可编辑模板 | —— |
 | **AI 自动建表** | AI 根据报表需求自动建表并填充示例数据，快速验证效果 | 需开启 `autoTableEnabled: true` |
 

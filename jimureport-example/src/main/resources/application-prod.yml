@@ -2,11 +2,12 @@ server:
   port: 8085
   tomcat:
     max-swallow-size: -1
-  error:
-    include-exception: true
-    include-stacktrace: ALWAYS
-    include-message: ALWAYS
 spring:
+  web:
+    error:
+      include-exception: true
+      include-stacktrace: ALWAYS
+      include-message: ALWAYS
   servlet:
     multipart:
       max-file-size: 10MB
@@ -47,7 +48,7 @@ spring:
     template_update_delay: 0
 #持久层框架
 minidao:
-  base-package: org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*
+  base-package: org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*,org.jeecg.modules.chat2bi.*
 jeecg:
   # local|minio|alioss
   uploadType: local

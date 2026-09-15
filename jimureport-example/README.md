@@ -11,7 +11,7 @@
 环境要求
 -----------------------------------
 
-- 要求jdk17+（本项目springboot3架构）
+- 要求 JDK 17+（本项目采用 Spring Boot 4.1 架构）
 - 要求mysql5.7+ 手工执行db/jimureport.mysql5.7.create.sql，会自动创建库jimureport
 - 项目配置：src/main/resources/application-dev.yml
 - redis（可选）
@@ -43,7 +43,7 @@ Redis集成（可选）
            
 -  第三步： 启动项目（右键运行）
 
-           org.jeecg.modules.JimuReportApplication
+           com.jeecg.JimuReportApplication
            
 -  第四步： 访问项目（默认账号：admin 密码：123456）
 

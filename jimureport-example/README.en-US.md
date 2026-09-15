@@ -11,7 +11,7 @@ Using MySQL 5.7 database
 Requirements
 -----------------------------------
 
-- Requires JDK 17+ (This project uses Spring Boot 3 architecture)
+- Requires JDK 17+ (This project uses Spring Boot 4.1 architecture)
 - Requires MySQL 5.7+ - Manually execute db/jimureport.mysql5.7.create.sql, which will automatically create the jimureport database
 - Project configuration: src/main/resources/application-dev.yml
 - Redis (optional)
@@ -43,7 +43,7 @@ Usage Steps
            
 -  Step 2: Start the project (right-click to run)
 
-           org.jeecg.modules.JimuReportApplication
+           com.jeecg.JimuReportApplication
            
 -  Step 3: Access the project (Default username: admin, Password: 123456)
 
