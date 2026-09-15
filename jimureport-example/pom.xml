@@ -109,6 +109,12 @@
             <artifactId>jimubi-spring-boot3-starter</artifactId>
             <version>${jimubi.version}</version>
         </dependency>
+        <!-- Chat2BI对话式智能问数 -->
+        <dependency>
+            <groupId>org.jeecgframework.jimureport</groupId>
+            <artifactId>jimuchatbi-spring-boot4-starter</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <!-- minidao -->
         <dependency>
             <groupId>org.jeecgframework.boot3</groupId>
