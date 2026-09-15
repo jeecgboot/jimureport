@@ -95,7 +95,7 @@ jeecg:
     #多租户模式，默认值为空(created:按照创建人隔离、tenant:按照租户隔离)
     saasMode:
     # 签名密钥
-    signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
+    signatureSecret: 0f861e46322d46148e475bfc591f4d4ab348d4eb82aa19c8
     # 平台上线安全配置
     firewall:
       # 数据源安全 (开启后，不允许使用平台数据源、SQL解析加签并且不允许查询数据库)

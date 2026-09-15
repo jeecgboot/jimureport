@@ -49,7 +49,7 @@ spring:
     template_update_delay: 0
 #持久层框架
 minidao:
-  base-package: org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*
+  base-package: org.jeecg.modules.jmreport.*,org.jeecg.modules.drag.*,org.jeecg.modules.chat2bi.*
 jeecg:
   # local|minio|alioss
   uploadType: local
@@ -74,7 +74,7 @@ jeecg:
     #多租户模式，默认值为空(created:按照创建人隔离、tenant:按照租户隔离)
     saasMode:
     # 签名密钥
-    signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
+    signatureSecret: 6803c801507790bc4147e8e61b98b99206a94b37d7980e32
     ai:
       # OpenAI 兼容 base 地址（必填）
       base-url: https://api.deepseek.com
