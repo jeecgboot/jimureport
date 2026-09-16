@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Component
 public class JimuReportTokenServiceImpl implements JmReportTokenServiceI {
-
+    
     /**
      * 通过请求获取Token
      * @param request
@@ -65,7 +65,12 @@ public class JimuReportTokenServiceImpl implements JmReportTokenServiceI {
         //onl:drag:clear:recovery          清空回收站
         //drag:analysis:sql                SQL解析
         //drag:design:getTotalData         仪表盘对Online表单展示数据
-        return new String[]{"drag:datasource:testConnection","onl:drag:clear:recovery","drag:analysis:sql","drag:design:getTotalData","onl:drag:page:delete"};
+        return new String[]{"drag:datasource:testConnection","onl:drag:clear:recovery","drag:analysis:sql","drag:design:getTotalData","onl:drag:page:delete",
+                "drag:dataset:save","drag:dataset:delete","drag:datasource:saveOrUpate","drag:datasource:delete",
+                "jmreport:exportJob:list","jmreport:exportJob:save","jmreport:exportJob:status","jmreport:exportJob:detail","jmreport:exportJob:run","jmreport:exportJob:delete","jmreport:exportJob:plugin",
+                "jmreport:reportGroup:list","jmreport:reportGroup:save","jmreport:reportGroup:detail","jmreport:reportGroup:delete",
+                "jmreport:category:add","jmreport:category:edit","jmreport:category:delete","jmreport:category:reduction","jmreport:category:completelyDelete","jmreport:category:batchMove","jmreport:category:folderSort",
+                "jmreport:map:add","jmreport:map:delete", "jmreport:design:loadTableData","jmreport:datasource:testConnection","jmreport:datasource:saveOrUpate","jmreport:datasource:delete","jmreport:ai:tableMeta","jmreport:exportJob:export"};
     }
 
     /**
