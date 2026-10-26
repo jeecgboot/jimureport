@@ -4,11 +4,11 @@
 
 # JimuReport积木报表(免费报表工具)
 
-v2.5.4 | 2026-09-23
+v2.5.5 | 2026-10-26
 
 
 [![](https://img.shields.io/badge/Author-北京国炬信息技术有限公司-orange.svg)](https://guojusoft.com)
-[![](https://img.shields.io/badge/version-2.5.4-brightgreen.svg)](https://github.com/jeecgboot/JimuReport)
+[![](https://img.shields.io/badge/version-2.5.5-brightgreen.svg)](https://github.com/jeecgboot/JimuReport)
 [![](https://img.shields.io/badge/Blog-积木报表官网-blue.svg)](http://jimureport.com)
 [![](https://img.shields.io/badge/Docs-开发文档-9cf.svg)](https://help.jimureport.com)
 [![](https://img.shields.io/badge/AI-报表%20%26%20大屏%20%26%20ChatBI-ff5722.svg)](https://jimureport.com/skills)
@@ -79,7 +79,7 @@ v2.5.4 | 2026-09-23
  <dependency>
     <groupId>org.jeecgframework.jimureport</groupId>
     <artifactId>jimureport-spring-boot3-starter</artifactId>
-    <version>2.5.4</version>
+    <version>2.5.5</version>
  </dependency>
  <!-- mongo、redis和文件数据集支持包，按需引入 -->
  <dependency>
@@ -101,7 +101,7 @@ v2.5.4 | 2026-09-23
  <dependency>
     <groupId>org.jeecgframework.jimureport</groupId>
     <artifactId>jimureport-spring-boot4-starter</artifactId>
-    <version>2.5.4</version>
+    <version>2.5.5</version>
  </dependency>
 ```
 
@@ -257,7 +257,7 @@ jeecg:
 - [Docker 快速运行](https://help.jimureport.com/docker.html)
 - [绿色免安装版本](https://pan.baidu.com/s/1z9VmMz4HCc7GMVbzugetLQ?pwd=xafr)
 
-> 默认账号密码：admin / 123456，[支持改密码](https://help.jimureport.com/qa?_highlight=%E5%AF%86%E7%A0%81#4-jimureport-example%E9%A1%B9%E7%9B%AE%E6%80%8E%E4%B9%88%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%AF%86%E7%A0%81)
+> 默认账号：admin，口令不再默认为 123456：未配置时每次启动随机生成并打印到启动日志，可通过环境变量 `JIMU_ADMIN_PASSWORD` 或配置 `spring.security.user.password` 固定口令，[支持改密码](https://help.jimureport.com/qa?_highlight=%E5%AF%86%E7%A0%81#4-jimureport-example%E9%A1%B9%E7%9B%AE%E6%80%8E%E4%B9%88%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%AF%86%E7%A0%81)
 
 
 ## AI 智能生成

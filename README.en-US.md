@@ -4,11 +4,11 @@
 
 # JimuReport (Free Report Tool)
 
-v2.5.4 | 2026-09-23
+v2.5.5 | 2026-10-26
 
 
 [![](https://img.shields.io/badge/Author-北京国炬信息技术有限公司-orange.svg)](https://guojusoft.com)
-[![](https://img.shields.io/badge/version-2.5.4-brightgreen.svg)](https://github.com/jeecgboot/JimuReport)
+[![](https://img.shields.io/badge/version-2.5.5-brightgreen.svg)](https://github.com/jeecgboot/JimuReport)
 [![](https://img.shields.io/badge/Blog-积木报表官网-blue.svg)](http://jimureport.com)
 [![](https://img.shields.io/badge/Docs-Documentation-9cf.svg)](https://help.jimureport.com)
 [![](https://img.shields.io/badge/AI-Report%20%26%20Big%20Screen%20%26%20ChatBI-ff5722.svg)](https://jimureport.com/skills)
@@ -78,7 +78,7 @@ And with the arrival of the AI wave, JimuReport goes a step further by introduci
  <dependency>
     <groupId>org.jeecgframework.jimureport</groupId>
     <artifactId>jimureport-spring-boot3-starter</artifactId>
-    <version>2.5.4</version>
+    <version>2.5.5</version>
  </dependency>
  <!-- MongoDB, Redis, and file dataset support package, add as needed -->
  <dependency>
@@ -100,7 +100,7 @@ And with the arrival of the AI wave, JimuReport goes a step further by introduci
  <dependency>
     <groupId>org.jeecgframework.jimureport</groupId>
     <artifactId>jimureport-spring-boot4-starter</artifactId>
-    <version>2.5.4</version>
+    <version>2.5.5</version>
  </dependency>
 ```
 
@@ -214,7 +214,7 @@ springboot3
 - [Docker Quick Run](https://help.jimureport.com/docker.html)
 - [Green Installation-Free Version](https://pan.baidu.com/s/1z9VmMz4HCc7GMVbzugetLQ?pwd=xafr)
 
-> Default account / password: admin / 123456, [password change supported](https://help.jimureport.com/qa?_highlight=%E5%AF%86%E7%A0%81#4-jimureport-example%E9%A1%B9%E7%9B%AE%E6%80%8E%E4%B9%88%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%AF%86%E7%A0%81)
+> Default account: admin. There is no longer a default password of 123456: if none is configured, a random password is generated on each startup and printed to the startup log. Set the `JIMU_ADMIN_PASSWORD` environment variable or `spring.security.user.password` to fix it, [password change supported](https://help.jimureport.com/qa?_highlight=%E5%AF%86%E7%A0%81#4-jimureport-example%E9%A1%B9%E7%9B%AE%E6%80%8E%E4%B9%88%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%AF%86%E7%A0%81)
 
 
 ## AI-Powered Generation
