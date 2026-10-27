@@ -80,6 +80,8 @@ jeecg:
     saasMode:
     # 接口加签密钥(示例值随开源仓库公开，部署前请替换为自己的随机值)
     signatureSecret: dfc4f81aa9a93271869fab53b3aaed91d836429ac3924184
+    test-controller:
+      enabled: true
     ai:
       # OpenAI 兼容 base 地址（必填）
       base-url: https://api.deepseek.com
