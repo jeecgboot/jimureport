@@ -133,7 +133,7 @@ v2.5.6 | 2026-10-27
 <dependency>
   <groupId>org.jeecgframework.jimureport</groupId>
   <artifactId>jimubi-spring-boot3-starter</artifactId>
-  <version>2.5.4.1</version>
+  <version>2.5.6</version>
 </dependency>
 ```
 
@@ -143,7 +143,7 @@ v2.5.6 | 2026-10-27
 <dependency>
   <groupId>org.jeecgframework.jimureport</groupId>
   <artifactId>jimubi-spring-boot4-starter</artifactId>
-  <version>2.5.4</version>
+  <version>2.5.6</version>
 </dependency>
 ```
 
