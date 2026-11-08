@@ -16,22 +16,24 @@ v2.5.6.1 | 2026-11-02
 [![GitHub forks](https://img.shields.io/github/forks/jeecgboot/JimuReport.svg?style=social&label=Fork)](https://github.com/jeecgboot/JimuReport)
 
 
-> **🎉 JimuChatBI is now live: the first free and open-source conversational intelligent data analytics product (Chat2BI). A truly AI-powered reporting tool is here! Generate reports and data screens from one sentence, with conversational AI refinement and optimization; Excel-like online report design, compatible with Xinchuang / domestic data sources — a cost-effective open-source alternative to FineReport and Tableau.** ✨
+> **JimuReport: a free and open-source all-in-one data analytics platform covering reports, big screens, BI dashboards, and Chat2BI intelligent Q&A. Generate reports and data screens from one sentence, refine them through conversational AI, design online in an Excel-like editor, and connect to Xinchuang / domestic data sources.** ✨
 
 
 ## Product Overview
 
-JimuReport is a **free data visualization reporting tool** that brings reports, printing, big screens, dashboards, and conversational BI together — design entirely online, like building with blocks. It consists of three modules: **JimuReport** focuses on traditional complex reports and printing, **JimuBI** focuses on big-screen and dashboard visualization, and **JimuChatBI** provides conversational intelligent data analysis, enabling data queries and insights through natural language.
+JimuReport is a **free and open-source all-in-one data analytics platform** that brings reports, big screens, BI dashboards, and Chat2BI intelligent Q&A together.
 
-- **🎉 JimuChatBI is now live**: the **first free and open-source conversational intelligent data analytics product (Chat2BI)**. Just tell AI what you need — tables, charts, and grouped summaries are generated automatically, handling complex reporting scenarios with ease. Want a big screen? One sentence does that too. Welcome to the AI era of data analytics.
-- **AI-Powered Generation**: Built-in Claude Code skills (AI report / big screen / dashboard / ChatBI) generate professional visualization pages from a single sentence, with conversational AI refinement and optimization — no more tedious drag-and-drop.
-- **Excel-like Designer**: Web-based drag-and-drop design, WYSIWYG, focused on solving enterprise-grade complex reporting challenges.
-- **Enterprise Advanced Features**: grouping / cross-tab / master-detail reports, **multi-sheet reports**, data drill-down, **one-click printing**, form-overlay & invoice printing, **data filling**, **mobile reports**, QR/barcodes, and more.
-- **Full-Scenario Coverage**: JimuBI supports big screens, dashboards, portals, and mobile — develop once, adapt everywhere; JimuChatBI enables data queries and analysis through natural-language conversation, lowering the barrier to BI; big screens use a Word-like style with freely draggable components.
-- **Simple · Easy · Professional**: greatly lowers report development difficulty, shortens development cycles, and saves costs.
+**A reporting product built for the AI era**: generate reports, big screens, and portals from a single sentence, then modify reports and big screens through conversation — your hands are freed, and "I don't know how to use it" is no longer a problem!
+
+- **🤖 AI Assistant**: an AI entry built into the designer, ready once configured. Describe what you need in one sentence or upload a screenshot to generate reports, big screens, and dashboards; not satisfied? Just keep talking and the AI keeps refining.
+- **🖥️ Intelligent Big Screen**: generate a complete data big screen from one sentence — chart layout, color theme, and data binding done in one step; Word-like design with freely draggable components for fine-tuning.
+- **💬 Chat2BI Intelligent Q&A (JimuChatBI)**: the first free and open-source conversational BI — no SQL, no drag-and-drop configuration; ask a question and get tables, charts, and grouped summaries.
+- **🧩 AI Skills**: open-source Claude Code skills ([jeecgboot/skills](https://github.com/jeecgboot/skills)) for creating reports, big screens, dashboards, and ChatBI in natural language directly from Claude Code.
+- **📊 Excel-like Designer**: online drag-and-drop, WYSIWYG, with fine-grained control for complex reports.
+- **🏢 Enterprise Features**: grouping / cross-tab / master-detail reports, **multi-sheet reports**, data drill-down, **one-click printing**, form-overlay & invoice printing, **data filling**, **mobile reports**, QR/barcodes, and more.
+- **🌐 Full-Scenario Coverage**: big screens, dashboards, portals, and mobile — develop once, adapt everywhere; compatible with Xinchuang / domestic data sources.
 
 > - **Open Source First** — building "professional, easy-to-use, AI-intelligent" data visualization reports, big screens, and portals
-> - **One-Sentence AI Generation** — AI Report · AI Big Screen · AI Dashboard
 > - **License** — free to use, commercial use allowed, source code not open
 
 
