@@ -7,7 +7,7 @@
 v2.5.6.1 | 2026-11-02
 
 
-[![](https://img.shields.io/badge/Author-北京国炬信息技术有限公司-orange.svg)](https://guojusoft.com)
+[![](https://img.shields.io/badge/Author-北京国炬信息技术-orange.svg)](https://guojusoft.com)
 [![](https://img.shields.io/badge/version-2.5.6.1-brightgreen.svg)](https://github.com/jeecgboot/JimuReport)
 [![](https://img.shields.io/badge/Blog-积木报表官网-blue.svg)](http://jimureport.com)
 [![](https://img.shields.io/badge/Docs-Documentation-9cf.svg)](https://help.jimureport.com)
