@@ -2,7 +2,7 @@
 
 
 
-# JimuReport积木报表(免费报表工具)
+# JimuReport 积木报表 —— 免费开源的报表与 BI 工具
 
 v2.5.6.1 | 2026-11-02
 
@@ -11,19 +11,20 @@ v2.5.6.1 | 2026-11-02
 [![](https://img.shields.io/badge/version-2.5.6.1-brightgreen.svg)](https://github.com/jeecgboot/JimuReport)
 [![](https://img.shields.io/badge/Blog-积木报表官网-blue.svg)](http://jimureport.com)
 [![](https://img.shields.io/badge/Docs-开发文档-9cf.svg)](https://help.jimureport.com)
+[![](https://img.shields.io/badge/免费-可商用-success.svg)](https://jimureport.com/vip)
 [![](https://img.shields.io/badge/AI-报表%20%26%20大屏%20%26%20ChatBI-ff5722.svg)](https://jimureport.com/skills)
 [![GitHub stars](https://img.shields.io/github/stars/jeecgboot/JimuReport.svg?style=social&label=Stars)](https://github.com/jeecgboot/JimuReport)
 [![GitHub forks](https://img.shields.io/github/forks/jeecgboot/JimuReport.svg?style=social&label=Fork)](https://github.com/jeecgboot/JimuReport)
 
 
-> **积木报表：免费开源的一站式数据分析平台，涵盖报表、大屏、BI 仪表盘与 Chat2BI 智能问数。一句话生成报表和数据大屏，支持对话式 AI 修改优化，类 Excel 在线设计，兼容国产信创数据源。** ✨
+> **积木报表：免费开源的报表与 BI 工具，可视化报表设计、数据大屏、仪表盘、打印设计、数据填报一站搞定；AI 一句话生成报表和大屏，Chat2BI 智能问数，类 Excel 在线设计，兼容国产信创数据源，是帆软、润乾报表的免费替代。** ✨
 
 
 
 
 ## 产品介绍
 
-积木报表是一款**免费开源的一站式数据分析平台**，集报表、大屏、BI 仪表盘、Chat2BI 智能问数于一体。
+积木报表是一款**免费开源的报表与 BI 工具**，集可视化报表设计、数据大屏、仪表盘、打印设计、数据填报和 Chat2BI 智能问数于一体，功能免费、可商用，可作为帆软、润乾报表的免费替代。
 
 **AI 时代的报表产品**：一句话即可生成报表、大屏、门户，用对话的方式修改报表和大屏——彻底解放双手，告别“产品不会用”的难题！
 

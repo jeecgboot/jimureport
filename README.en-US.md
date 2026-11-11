@@ -2,7 +2,7 @@
 
 
 
-# JimuReport (Free Report Tool)
+# JimuReport — Free & Open-Source Reporting and BI Tool
 
 v2.5.6.1 | 2026-11-02
 
@@ -11,17 +11,18 @@ v2.5.6.1 | 2026-11-02
 [![](https://img.shields.io/badge/version-2.5.6.1-brightgreen.svg)](https://github.com/jeecgboot/JimuReport)
 [![](https://img.shields.io/badge/Blog-积木报表官网-blue.svg)](http://jimureport.com)
 [![](https://img.shields.io/badge/Docs-Documentation-9cf.svg)](https://help.jimureport.com)
+[![](https://img.shields.io/badge/Free-Commercial%20Use%20OK-success.svg)](https://jimureport.com/vip)
 [![](https://img.shields.io/badge/AI-Report%20%26%20Big%20Screen%20%26%20ChatBI-ff5722.svg)](https://jimureport.com/skills)
 [![GitHub stars](https://img.shields.io/github/stars/jeecgboot/JimuReport.svg?style=social&label=Stars)](https://github.com/jeecgboot/JimuReport)
 [![GitHub forks](https://img.shields.io/github/forks/jeecgboot/JimuReport.svg?style=social&label=Fork)](https://github.com/jeecgboot/JimuReport)
 
 
-> **JimuReport: a free and open-source all-in-one data analytics platform covering reports, big screens, BI dashboards, and Chat2BI intelligent Q&A. Generate reports and data screens from one sentence, refine them through conversational AI, design online in an Excel-like editor, and connect to Xinchuang / domestic data sources.** ✨
+> **JimuReport: a free and open-source reporting and BI tool — visual report design, data big screens, dashboards, print design, and data entry in one place, plus Chat2BI intelligent Q&A; a free alternative to FineReport and RunQian Report. Generate reports and data screens from one sentence, refine them through conversational AI, design online in an Excel-like editor, and connect to Xinchuang / domestic data sources.** ✨
 
 
 ## Product Overview
 
-JimuReport is a **free and open-source all-in-one data analytics platform** that brings reports, big screens, BI dashboards, and Chat2BI intelligent Q&A together.
+JimuReport is a **free and open-source reporting and BI tool** that brings visual report design, data big screens, dashboards, print design, data entry, and Chat2BI intelligent Q&A together — free to use, commercial use allowed, and a free alternative to FineReport and RunQian Report.
 
 **A reporting product built for the AI era**: generate reports, big screens, and portals from a single sentence, then modify reports and big screens through conversation — your hands are freed, and "I don't know how to use it" is no longer a problem!
 
